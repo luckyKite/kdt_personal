@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-const User = require('./User');
-
+// const User = require('./User');
 const postSchema = new mongoose.Schema({
     postId: Number,
     title: String,
