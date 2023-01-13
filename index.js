@@ -1,15 +1,19 @@
 //express 모듈을 가져온다.
 const express = require('express');
+
 //express 모듈을 사용하여 app을 만든다.
 const app = express();
+
 // json 형태의 데이터를 요청으로 받을 수 있도록 한다.
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
 //port를 설정한다.
 const port = 3000;
 
 //mongoose를 가져온다.
 const mongoose = require('mongoose');
+
 //mongoose를 사용하여 mongodb에 연결한다.
 const url = 'mongodb://root:1234@localhost:27017';
 mongoose.set('strictQuery', false);
