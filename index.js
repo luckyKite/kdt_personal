@@ -2,7 +2,7 @@
 const express = require('express');
 //express 모듈을 사용하여 app을 만든다.
 const app = express();
-//use json
+// json 형태의 데이터를 요청으로 받을 수 있도록 한다.
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 //port를 설정한다.
