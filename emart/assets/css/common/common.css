@@ -1,9 +1,21 @@
+html {
+  font-size: 14px;
+}
+
 body {
   margin: 0px;
   padding: 0px;
 }
 
-body p::selection {
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Gugi', cursive;
+}
+
+ul li a{
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+::selection {
   background-color: var(--emart_black);
   color: var(--emart_yellow);
 }
