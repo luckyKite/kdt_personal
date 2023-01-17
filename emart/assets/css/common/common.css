@@ -3,6 +3,11 @@ body {
   padding: 0px;
 }
 
+body p::selection {
+  background-color: var(--emart_black);
+  color: var(--emart_yellow);
+}
+
 body a {
   text-decoration: none;
 }
