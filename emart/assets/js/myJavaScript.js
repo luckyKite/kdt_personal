@@ -6,5 +6,6 @@ function getName(myName) {
 
 function test() {
   let name = window.prompt("이름을 입력하세요");
-  document.getElementById("app").innerHTML = getName(name);
+  document.getElementById("app").innerHTML = 
+  `<h1>${getName(name)}</h1>`
 }
