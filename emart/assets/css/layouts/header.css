@@ -17,13 +17,14 @@ header .top_menu {
 
 header .top_menu nav {
   margin: 0 auto;
+  position: relative;
   width: 1140px;
 }
 
 header .top_menu nav ul {
-  position: relative;
+  position: absolute;
   top: 10px;
-  left: 60%;
+  right: 0px;
   /* display: flex;
   justify-content: flex-end; */
 }
@@ -54,6 +55,7 @@ header .top_menu nav ul li a:hover {
 
 /* header main menu */
 header .main_menu {
+  font-family: 'Do Hyeon', sans-serif;
   width: 1140px;
   margin: 0 auto;
   padding-top: 20px;
@@ -107,4 +109,56 @@ header .main_menu .logo {
 
 header .main_menu .logo h1{
   font-size: 0;
+}
+
+
+
+@media screen and (min-width: 576px) { 
+  header .top_menu nav {
+    width: 540px;
+  }
+  header .top_menu nav ul li {
+    font-size: 1.4rem;
+  }
+  
+}
+
+
+@media screen and (min-width: 768px) { 
+  header .top_menu nav {
+    width: 720px;
+  }
+  header .top_menu {
+    background-color: #d8ba25;
+  }
+  header .top_menu nav ul li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) { 
+  header .top_menu nav {
+    width: 960px;
+  }
+  header .top_menu {
+    background-color: #3131f0;
+  }
+  header .top_menu nav ul li {
+    font-size: 1.0rem;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) { 
+  header .top_menu {
+    background-color: #F1F1F2;
+  }
+
+  header .top_menu nav ul li {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1400px) { 
+
 }
