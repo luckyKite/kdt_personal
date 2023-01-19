@@ -9,7 +9,27 @@ const Data = [
 for(let i = 0; i < 5; i++) {
   let str = "";
   for(let j = 0; j < 5; j++) {
-    str += Data[j][4-i]+" ";
+    str += Data[4-j][i]+" ";
   }
   console.log(str);
 }
+
+let sum = 0;
+for(let i = 1; i <= 10; i++) {
+  sum += i;
+}
+
+console.log(sum);
+
+function sumConsole(num) {
+  let sum = 0;
+  for(let i = 1; i <= num; i++) {
+    for(let j = 1; j <= i; j++) {
+      sum += j;
+    }
+  }
+
+  console.log(sum);
+}
+
+sumConsole(1000);
