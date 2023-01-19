@@ -19,17 +19,26 @@ for(let i = 1; i <= 10; i++) {
   sum += i;
 }
 
+function sumRecursive(num) {
+
+  if(num === 1) {
+    return 1;
+  }
+  return num + sumRecursive(num-1);
+
+}
+
+console.log("재귀함수",sumRecursive(10000));
+
 console.log(sum);
 
 function sumConsole(num) {
   let sum = 0;
   for(let i = 1; i <= num; i++) {
-    for(let j = 1; j <= i; j++) {
-      sum += j;
-    }
+    sum+=sumRecursive(i);
   }
 
   console.log(sum);
 }
 
-sumConsole(1000);
+sumConsole(100000);
