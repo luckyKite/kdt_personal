@@ -9,7 +9,8 @@ const Data = [
 for(let i = 0; i < 5; i++) {
   let str = "";
   for(let j = 0; j < 5; j++) {
-    str += Data[4-j][i]+" ";
+    let x = Data[4-j][i].toString();
+    str += x.padStart(2,'0')+" ";
   }
   console.log(str);
 }
@@ -41,4 +42,18 @@ function sumConsole(num) {
   console.log(sum);
 }
 
-sumConsole(100000);
+for(let i=0; i<10; i++) {
+  if(i === 5) {
+    continue;
+  } else if(i === 8) {
+    break;
+  }
+  console.log(i);
+}
+
+let txt = 'Writing objects: 100% (4/4), 476 bytes | 476.00 KiB/s, done.';
+// txt = txt.replace('objects', 'good');
+console.log(txt.trim());
+
+console.log(txt.toUpperCase());
+console.log(txt);
